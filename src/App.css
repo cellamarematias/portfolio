@@ -1,16 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+.overlay::before {
+  height: 100vh;
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.26956732399991246) 45%, rgba(3,2,2,0.8746093408066351) 85%);
+}
+
+.overlay {
+  position: relative;
+  /* width: 100vw; */
+}
+
 .App {
+  /* position: absolute; */
   text-align: center;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {

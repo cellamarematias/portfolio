@@ -1,0 +1,57 @@
+.headerContainer {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+.container {
+	/* position: absolute; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 2rem;
+}
+
+.photoContainer {
+	background-image: url("../../../public/profile.jpg");
+	/* position: absolute; */
+	width: 50px;
+  height: 50px;
+	overflow: hidden;
+	background-size: cover;
+	border-radius: 50%;
+	/* margin: 2rem; */
+}
+
+.displayName {
+	/* position: absolute; */
+	margin-left: 2rem;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.icons svg {
+	height: 35px;
+	width: 50px;
+	border: none;
+	color: white;
+	transition: 0.3s ease;
+}
+
+.icons svg:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.icons svg {
+	margin: 1rem;
+}
