@@ -26,7 +26,7 @@ export default function ContactUs() {
 				<label>Subject</label>
 				<input type="text" name="subject" />
 				<label>Message</label>
-				<textarea name="html_message" />
+				<textarea name="html_message" rows={"5"}/>
 				<input type="submit" value="Send" />
 			</form>
 		</div>

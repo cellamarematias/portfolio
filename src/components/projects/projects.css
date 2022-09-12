@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .projectsContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	background-image: url("../../../public/bussisnes.jpg");
 	background-size: cover;
-	height: 107vh;
+	/* height: 107vh; */
 }
 
 .pcontent {
@@ -15,8 +19,8 @@
 	font-weight: 400;
 	font-size: 30px;
 	color: white;
-	animation-duration: 3s;
-  animation-name: slidein;
+	/* animation-duration: 3s;
+  animation-name: slidein; */
 }
 
 @keyframes slidein {
@@ -54,11 +58,17 @@ a:visited {
   animation-name: slidein;
 }
 
+.cardCol {
+	width: 25%;
+	padding: 0 10px;
+}
+
 .card {
 	display: grid;
-	grid-template-columns: 200px;
+	/* grid-template-columns: 200px; */
 	grid-template-rows: 150px 150px 80px;
 	grid-template-areas: "image" "text" "stats";
+
 
 	font-family: roboto;
 	border-radius: 18px;
@@ -164,7 +174,7 @@ svg {
 }
 
 .card:hover {
-	transform: scale(1.2);
+	transform: scale(1.05);
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -234,4 +244,50 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9
 	animation-delay:0.2s;
 	animation-iteration-count:infinite;
 	animation-timing-function:linear;
+}
+
+
+@media (max-width: 575.98px) {
+	.projectsContainer {
+		align-items: center;
+	}
+	.cardContainer {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+	.projectsContainer {
+		align-items: center;
+		height: 100vh;
+	}
+
+  .cardContainer {
+    /* width: 33%;
+    display: block; */
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+	.projectsContainer {
+		align-items: center;
+		height: 100%;
+	}
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+	.projectsContainer {
+		height: 107vh;
+	}
+
+	.cardContainer {
+		width: 100%;
+	}
 }

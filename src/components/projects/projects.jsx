@@ -6,7 +6,7 @@ const Projects = () => {
 	return (
 			<div id='projects' className="projectsContainer">
 				<div className='cardContainer'>
-					<a href="https://github.com/cellamarematias/react-app" target="_blank" rel="noopener noreferrer">
+					<a className='cardCol' href="https://github.com/cellamarematias/react-app" target="_blank" rel="noopener noreferrer">
 						<div className='card'>
 							<div className='cardImage'></div>
 							<div className='cardText'>
@@ -27,7 +27,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</a>
-					<a href="https://github.com/cellamarematias/react-app-server" target="_blank" rel="noopener noreferrer">
+					<a className='cardCol' href="https://github.com/cellamarematias/react-app-server" target="_blank" rel="noopener noreferrer">
 						<div className='card'>
 							<div className='cardImageTwo'></div>
 							<div className='cardText'>
@@ -48,7 +48,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</a>
-					<a href="https://github.com/cellamarematias/app-crud-node-mysql" target="_blank" rel="noopener noreferrer">
+					<a className='cardCol' href="https://github.com/cellamarematias/app-crud-node-mysql" target="_blank" rel="noopener noreferrer">
 						<div className='card'>
 							<div className='cardImageThree'></div>
 							<div className='cardText'>
@@ -69,7 +69,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</a>
-					<a href="https://github.com/cellamarematias/jade-app" target="_blank" rel="noopener noreferrer">
+					<a className='cardCol' href="https://github.com/cellamarematias/jade-app" target="_blank" rel="noopener noreferrer">
 						<div className='card'>
 							<div className='cardImageFour'></div>
 							<div className='cardText'>

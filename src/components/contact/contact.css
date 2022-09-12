@@ -30,11 +30,13 @@ input:focus {
 }
 
 textarea {
+	padding: 1rem;
 	height: 25px;
 	border-radius: 5px;
 	border: none;
 	margin: 5px;
 	color: white;
+	overflow: hidden;
 	font-family: 'Inter', sans-serif;
 	background-color: rgba(0, 0, 0, 0.5);
 }
