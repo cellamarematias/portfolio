@@ -1,0 +1,62 @@
+.card {
+	width: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem;
+	border-radius: 5px;
+	background-color: #ec694d;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+	font-family: 'Inter', sans-serif;
+	cursor: pointer;
+	animation-duration: 3s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cardText {
+	margin-top: 1rem;
+  text-align: center;
+	font-weight: 200;
+	text-decoration: none;
+	color: #fff;
+}
+
+.date {
+	font-family: 'Inter', sans-serif;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+.projectName {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.cardStats {
+	display: flex;
+	justify-content: space-around;
+}
+
+.stat {
+	margin: 5px;
+}
+
+.value {
+	color: #fff;
+}
+
+.card svg {
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+

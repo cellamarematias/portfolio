@@ -1,0 +1,10 @@
+.footerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footerContainer svg {
+	height: 25px;
+	margin: 1rem 1rem 1.5rem 1rem;
+}

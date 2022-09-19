@@ -1,20 +1,21 @@
 import './App.css';
-import Header from './components/header/header';
-import Body from './components/body/body';
+import Nav from './components/nav/nav';
+import Main from './components/main/main';
 import Projects from './components/projects/projects';
-import ContactUs from './components/contact/contact';
+import Stack from './components/stack/stack';
+import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
     <div className="App">
-      <div className="overlay">
-        <Header />
-        <Body />
-        <Projects />
-        <ContactUs />
-      </div>
+      <Nav/>
+      <Main/>
+      <Projects/>
+      <Stack/>
+      <Contact/>
+      <Footer/>
     </div>
-
   );
 }
 

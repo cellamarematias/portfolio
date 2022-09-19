@@ -1,10 +1,9 @@
-import React from 'react';
-import emailjs from 'emailjs-com';
 import './contact.css';
+import emailjs from 'emailjs-com';
 
-export default function ContactUs() {
+const Contact = () => {
 
-  function sendEmail(e) {
+	function sendEmail(e) {
     e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
 
     emailjs.sendForm('service_hwto52n', "template_1t6680l", e.target, 'r2t6UAfzn1d0zaKPB')
@@ -15,8 +14,8 @@ export default function ContactUs() {
       });
   }
 
-  return (
-		<div className='contactContainer'>
+	return (
+		<div className='contactContainer' id="contact">
 			<form className="contactForm" onSubmit={sendEmail}>
 				<input type="hidden" name="contact_number" />
 				<label>Name</label>
@@ -30,5 +29,7 @@ export default function ContactUs() {
 				<input type="submit" value="Send" />
 			</form>
 		</div>
-  );
-}
+	)
+};
+
+export default Contact;

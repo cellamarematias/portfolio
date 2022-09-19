@@ -1,108 +1,62 @@
 import './projects.css';
-import { GrReactjs } from "react-icons/gr";
+import Card from '../card/card';
 import { SiMongodb, SiNodedotjs, SiJavascript, SiMysql } from "react-icons/si";
+import { AiFillApi, AiFillGithub } from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
+
 
 const Projects = () => {
 	return (
-			<div id='projects' className="projectsContainer">
-				<div className='cardContainer'>
-					<a className='cardCol' href="https://github.com/cellamarematias/react-app" target="_blank" rel="noopener noreferrer">
-						<div className='card'>
-							<div className='cardImage'></div>
-							<div className='cardText'>
-								<span className='date'>2022</span>
-								<h2>Expenses App</h2>
-								<p>React</p>
-							</div>
-							<div className='cardStats'>
-								<div className='stat'>
-								<div className='value'><SiJavascript/></div>
-								</div>
-								<div className='stat'>
-									<div className='value'><GrReactjs/></div>
-								</div>
-								<div className='stat'>
-								<div className='value'><SiMongodb/></div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a className='cardCol' href="https://github.com/cellamarematias/react-app-server" target="_blank" rel="noopener noreferrer">
-						<div className='card'>
-							<div className='cardImageTwo'></div>
-							<div className='cardText'>
-								<span className='date'>2022</span>
-								<h2>API Rest</h2>
-								<p>Express</p>
-							</div>
-							<div className='cardStats'>
-								<div className='stat'>
-								<div className='value'><SiNodedotjs/></div>
-								</div>
-								<div className='stat'>
-									<div className='value'><SiJavascript/></div>
-								</div>
-								<div className='stat'>
-								<div className='value'><SiMongodb/></div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a className='cardCol' href="https://github.com/cellamarematias/app-crud-node-mysql" target="_blank" rel="noopener noreferrer">
-						<div className='card'>
-							<div className='cardImageThree'></div>
-							<div className='cardText'>
-								<span className='date'>2021</span>
-								<h2>Node-MySQL</h2>
-								<p>Node</p>
-							</div>
-							<div className='cardStats'>
-								<div className='stat'>
-								<div className='value'><SiNodedotjs/></div>
-								</div>
-								<div className='stat'>
-									<div className='value'><GrReactjs/></div>
-								</div>
-								<div className='stat'>
-								<div className='value'><SiMysql/></div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a className='cardCol' href="https://github.com/cellamarematias/jade-app" target="_blank" rel="noopener noreferrer">
-						<div className='card'>
-							<div className='cardImageFour'></div>
-							<div className='cardText'>
-								<span className='date'>2022</span>
-								<h2>Mobile App</h2>
-								<p>React Native</p>
-							</div>
-							<div className='cardStats'>
-								<div className='stat'>
-								<div className='value'><SiNodedotjs/></div>
-								</div>
-								<div className='stat'>
-									<div className='value'><GrReactjs/></div>
-								</div>
-								<div className='stat'>
-								<div className='value'><SiMongodb/></div>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-									{/* <div className="arrowContainerProjects">
-										<div class="roundProjects">
-											<a href="#body">
-												<div id="cta">
-														<span class="arrow primera next"></span>
-														<span class="arrow segunda next"></span>
-												</div>
-											</a>
-										</div>
-									</div> */}
+		<div className='projects' id="projects">
+			<h4 className='projectsTitle'>Projects</h4>
+			<div className='projectsContainer'>
+				<Card
+					url={"https://github.com/cellamarematias/react-app"}
+					name={'React'}
+					title={'Expenses App'}
+					year={'2022'}
+					icon1={<FaReact/>}
+					icon2={<SiMongodb/>}
+					icon3={<SiNodedotjs/>}
+				/>
+
+				<Card
+					url={"https://github.com/cellamarematias/react-app-server"}
+					name={'Express'}
+					title={'API REST'}
+					year={'2022'}
+					icon1={<SiMongodb/>}
+					icon2={<SiNodedotjs/>}
+					icon3={<SiJavascript/>}
+				/>
 			</div>
+
+			<div className='projectsContainer'>
+				<Card
+					url={"https://github.com/cellamarematias/app-crud-node-mysql"}
+					name={'Sql'}
+					title={'Node Web App'}
+					year={'2021'}
+					icon1={<SiJavascript/>}
+					icon2={<SiMongodb/>}
+					icon3={<SiMysql/>}
+				/>
+
+				<Card
+					url={"https://github.com/cellamarematias/jade-app"}
+					name={'React Native'}
+					title={'Crypto App'}
+					year={'2022'}
+					icon1={<FaReact/>}
+					icon2={<SiMongodb/>}
+					icon3={<AiFillApi/>}
+				/>
+			</div>
+			<div className='projectsGit'>
+			<p className='projectsParagraph'>more projects here<a href="https://github.com/cellamarematias" target="_blank" rel="noopener noreferrer"><AiFillGithub/></a></p>
+			</div>
+		</div>
 	)
-}
+};
 
 export default Projects;

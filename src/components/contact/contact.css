@@ -1,15 +1,18 @@
 
 .contactContainer {
-	background-image: url("../../../public/contact2.jpg");
-	background-size: cover;
-	height: 100vh;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	background-color: #121212;
+}
+
+label {
+	font-family: 'Inter', sans-serif;
+	margin-left: 1rem;
+	color: #ec694d;
 }
 
 .contactForm {
-	padding-top: 15rem;
-	padding-left: 3rem;
-	height: 300px;
-	width: 400px;
+	margin: 1rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -23,6 +26,12 @@ input {
 	background-color: rgba(0, 0, 0, 0.5);
 	font-family: 'Inter', sans-serif;
 	font-weight: 200;
+}
+
+input[type="submit"] {
+	margin-bottom: 1rem;
+	font-family: 'Inter', sans-serif;
+	color: #ec694d;
 }
 
 input:focus {
@@ -39,4 +48,16 @@ textarea {
 	overflow: hidden;
 	font-family: 'Inter', sans-serif;
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 900px) {
+	.contactContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contactForm {
+		width: 50%;
+	}
 }
