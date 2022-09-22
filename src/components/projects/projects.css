@@ -4,7 +4,7 @@
 	background-image: url('../../assets/bussisnes.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 90vh;
+	height: 100vh;
 }
 
 .projectsTitle {
@@ -52,5 +52,13 @@ svg {
 @media (min-width: 900px) {
 	.projects {
 		padding-top: 4rem;
+	}
+	.projectsGroup {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 75%;
+		padding: 3rem;
+
 	}
 }
