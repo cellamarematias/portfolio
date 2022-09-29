@@ -5,7 +5,7 @@
 	justify-content: center;
 	position:fixed;
 	width: 100%;
-	background-color: rgba(77, 77, 77, 0.326);
+	background-color: rgba(46, 46, 46, 0.326);
 }
 
 .profile {
@@ -27,8 +27,12 @@
 	background-color: #ec694d;
 	font-family: 'Reenie Beanie', cursive;
 	color: #fff;
-	font-size: 25px;
+	font-size: 35px;
 	text-transform: capitalize;
+}
+
+.profile a:hover {
+	color: #fff;
 }
 
 li {
@@ -45,7 +49,7 @@ li {
 	margin: 5px;
 	font-family: 'Inter', sans-serif;
 	font-size: 12px;
-	font-weight: 200;
+	font-weight: 300;
 	color: #fff;
 }
 

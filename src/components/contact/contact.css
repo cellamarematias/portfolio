@@ -1,7 +1,28 @@
+.app-title {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 1rem;
+	color: #ec694d;
+	font-size: 26px;
+}
+
+.app-title:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 25px;
+	height: 4px;
+	background: #ec694d;
+}
 
 .contactContainer {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 10rem;
 	padding-bottom: 8rem;
 	background-color: #121212;
@@ -13,6 +34,11 @@ label {
 	color: #ec694d;
 }
 
+.formContainer {
+	background-color: #3e3e3e;
+	width: 250px;
+}
+
 .contactForm {
 	margin: 1rem;
 	display: flex;
@@ -20,12 +46,12 @@ label {
 }
 
 input {
-	height: 25px;
-	border-radius: 5px;
+	height: 4rem;
 	border: none;
+	border-bottom: solid #5b5b5b 2px;
 	margin: 5px;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0);
 	font-family: 'Inter', sans-serif;
 	font-weight: 200;
 }
@@ -33,7 +59,13 @@ input {
 input[type="submit"] {
 	margin-bottom: 1rem;
 	font-family: 'Inter', sans-serif;
+	font-weight: bold;
 	color: #ec694d;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
 }
 
 input:focus {
@@ -42,24 +74,83 @@ input:focus {
 
 textarea {
 	padding: 1rem;
-	height: 25px;
-	border-radius: 5px;
+	height: 4rem;
 	border: none;
+	border-bottom: solid #5b5b5b 2px;
 	margin: 5px;
 	color: white;
 	overflow: hidden;
 	font-family: 'Inter', sans-serif;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+/* ANIMATION */
+
+.reveal {
+	opacity: 0;
+}
+
+.reveal.active {
+	opacity: 1;
+}
+
+.active.fade-bottom {
+	animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+	animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+	animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+	0% {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-left {
+	0% {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-right {
+	0% {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 @media (min-width: 900px) {
 	.contactContainer {
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.contactForm {
-		width: 40%;
+	.formContainer {
+		width: 500px;
 	}
 }
