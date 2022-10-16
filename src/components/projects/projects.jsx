@@ -7,30 +7,29 @@ import { FaReact, FaHtml5, FaCss3Alt, FaSass } from "react-icons/fa";
 
 const Projects = () => {
 
-	function reveal() {
-		var reveals = document.querySelectorAll(".reveal");
-		for (var i = 0; i < reveals.length; i++) {
-			var windowHeight = window.innerHeight;
-			var elementTop = reveals[i].getBoundingClientRect().top;
-			var elementVisible = 150;
-			if (elementTop < windowHeight - elementVisible) {
-				reveals[i].classList.add("active");
-			} else {
-				reveals[i].classList.remove("active");
-			}
-		}
-	}
+	// function reveal() {
+	// 	var reveals = document.querySelectorAll(".reveal");
+	// 	for (var i = 0; i < reveals.length; i++) {
+	// 		var windowHeight = window.innerHeight;
+	// 		var elementTop = reveals[i].getBoundingClientRect().top;
+	// 		var elementVisible = 150;
+	// 		if (elementTop < windowHeight - elementVisible) {
+	// 			reveals[i].classList.add("active");
+	// 		} else {
+	// 			reveals[i].classList.remove("active");
+	// 		}
+	// 	}
+	// }
 
-	window.addEventListener("scroll", reveal);
+	// window.addEventListener("scroll", reveal);
 
-	// To check the scroll position on page load
-	reveal();
+	// // To check the scroll position on page load
+	// reveal();
 
 	return (
 		<section className='projects' id="projects">
-			<h4 className='projectsTitle'>Projects</h4>
 			<div className='projectsGroup'>
-				<div className='projectsContainer reveal fade-left'>
+				<div className='projectsContainer'>
 					<Card
 						url={"https://github.com/cellamarematias/react-app"}
 						name={'React'}
@@ -52,7 +51,7 @@ const Projects = () => {
 					/>
 				</div>
 
-				<div className='projectsContainer reveal fade-left'>
+				<div className='projectsContainer'>
 					<Card
 						url={"https://github.com/cellamarematias/app-crud-node-mysql"}
 						name={'Sql'}
@@ -74,7 +73,7 @@ const Projects = () => {
 					/>
 				</div>
 
-				<div className='projectsContainer reveal fade-right'>
+				<div className='projectsContainer'>
 					<Card
 						url={"https://cellamarematias.github.io/demo-html-css-ll/"}
 						name={'HTML + CSS'}
@@ -95,7 +94,7 @@ const Projects = () => {
 					/>
 				</div>
 
-				<div className='projectsContainer reveal fade-right'>
+				<div className='projectsContainer'>
 					<Card
 						url={"https://github.com/cellamarematias/crud-nodejs-mongodb"}
 						name={'NODE'}
@@ -116,9 +115,6 @@ const Projects = () => {
 						icon3={<FaCss3Alt />}
 					/>
 				</div>
-			</div>
-			<div className='projectsGit'>
-				<p className='projectsParagraph'>more projects here -><a href="https://github.com/cellamarematias" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a></p>
 			</div>
 		</section>
 	)

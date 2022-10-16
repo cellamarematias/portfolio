@@ -2,7 +2,9 @@ import './stack.css';
 import { FaReact, FaNode, FaPhp } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { SiMysql, SiMongodb, SiGithub, SiCss3, SiHtml5 } from "react-icons/si";
+import { SiMysql, SiMongodb, SiGithub, SiCss3, SiHtml5, SiPostgresql } from "react-icons/si";
+import { BiGitBranch } from "react-icons/bi";
+import { SiJavascript, SiPostman } from "react-icons/si";
 
 const Stack = () => {
 
@@ -26,21 +28,20 @@ const Stack = () => {
 	reveal();
 	return (
 		<section className='stack' id="stack">
-			<h4 className='projectsTitle'>My Tech Stack</h4>
 			<div className='flexContainer'>
 				<div className='stackContainer reveal fade-left'>
 					<FaReact />
 					<FaNode />
 				</div>
 				<div className='stackContainer reveal fade-bottom'>
-					<FaPhp />
 					<SiMysql />
-				</div><div className='stackContainer reveal fade-bottom'>
 					<SiFirebase />
-					<SiMongodb />
 				</div><div className='stackContainer reveal fade-bottom'>
-					<FaNode />
-					<SiGithub />
+					<SiMongodb />
+					<BiGitBranch />
+				</div><div className='stackContainer reveal fade-bottom'>
+					<SiJavascript />
+					<SiPostman />
 				</div><div className='stackContainer reveal fade-right'>
 					<SiHtml5 />
 					<SiCss3 />

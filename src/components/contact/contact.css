@@ -3,7 +3,7 @@
 	flex-direction: column;
 	position: relative;
 	margin: 1rem;
-	color: #ec694d;
+	color: #B23C17;
 	font-size: 26px;
 }
 
@@ -15,7 +15,7 @@
 	bottom: -10px;
 	width: 25px;
 	height: 4px;
-	background: #ec694d;
+	background: #B23C17;
 }
 
 .contactContainer {
@@ -23,19 +23,33 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 10rem;
+	padding-top: 3rem;
 	padding-bottom: 8rem;
-	background-color: #121212;
+	background-image: url('../../assets/space.png');
+}
+
+.contact {
+	font-family: 'Outfit', sans-serif;
+	color: #ffff;
+	font-size: 55px; 
+	font-weight: 100;
+}
+
+.me {
+	font-family: 'Outfit', sans-serif;
+	color: #B23C17;
+	font-size: 55px; 
+	font-weight: 100;
 }
 
 label {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Outfit', sans-serif;
 	margin-left: 1rem;
-	color: #ec694d;
+	color: #B23C17;
 }
 
 .formContainer {
-	background-color: #3e3e3e;
+	background-color: #f1eeed10;
 	width: 250px;
 }
 
@@ -60,7 +74,7 @@ input[type="submit"] {
 	margin-bottom: 1rem;
 	font-family: 'Inter', sans-serif;
 	font-weight: bold;
-	color: #ec694d;
+	color: #B23C17;
 	border: none;
 }
 
@@ -148,6 +162,8 @@ textarea {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		padding-top: 10rem;
+
 	}
 
 	.formContainer {

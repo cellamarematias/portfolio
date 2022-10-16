@@ -1,15 +1,15 @@
 .card {
 	width: 10rem;
+	height: 10rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 1rem;
 	border-radius: 5px;
-	background-color: #ec694d;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
-	font-family: 'Inter', sans-serif;
+	background-color: #f1eeed10;
+	box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.096);
+	font-family: 'Outfit', sans-serif;
 	cursor: pointer;
-	animation-duration: 3s;
 }
 
 .card:hover {
@@ -53,10 +53,22 @@
 }
 
 .card svg {
-	color: #fff;
+	margin-top: 1rem;
+	color: #B23C17;
 }
 
 a {
 	text-decoration: none;
 }
 
+
+@media (min-width: 900px) {
+	.card {
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.formContainer {
+		width: 500px;
+	}
+}

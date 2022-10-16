@@ -37,8 +37,8 @@ const Contact = () => {
 		<section className='contact'>
 			<div className='contactContainer' id="contact">
 				<div class="app-title reveal fade-left">
-					<span>CONTACT</span>
-					<span>ME</span>
+					<span className='contact'>contact</span>
+					<span className='me'>me</span>
 				</div>
 				<div className='formContainer reveal fade-right'>
 					<form className="contactForm" onSubmit={sendEmail}>

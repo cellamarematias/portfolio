@@ -1,3 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #222222;
+}
+
+::-webkit-scrollbar {
+  background: #222222;
+}
+
+::-webkit-scrollbar-track {
+  background: #061221;
+  ;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B23C17;
 }

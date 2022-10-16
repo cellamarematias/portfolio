@@ -4,14 +4,13 @@ import Photo from '../../assets/profile.jpg';
 const Nav = () => {
 	return (
 	<div className="mainNav">
-		<div className='profile'>
-			<a href="#main" className="name animate-charcter">matias</a>
-		</div>
 		<nav>
 			<ul className="nav">
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#stack">Tech Stack</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#main"> <span>0.0</span>  home</a></li>
+				<li><a href="#projects"><span>0.1</span> projects</a></li>
+				<li><a href="#stack"><span>0.2</span> stack</a></li>
+				<li><a href="#contact"><span>0.3</span> contact</a></li>
+				<li><a href="#footer"><span>0.4</span> me</a></li>
 			</ul>
 		</nav>
 	</div>
